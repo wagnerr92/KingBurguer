@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		117C6AB52A9077E2002DFE2B /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117C6AB42A9077E2002DFE2B /* SigninViewController.swift */; };
 		11EEE1322A942FB8006CBDEB /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEE1312A942FB8006CBDEB /* SignInViewModel.swift */; };
+		11EEE1342A94532E006CBDEB /* SignInState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEE1332A94532E006CBDEB /* SignInState.swift */; };
 		11FE488F2A8DD9DE0034F755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE488E2A8DD9DE0034F755 /* AppDelegate.swift */; };
 		11FE48912A8DD9DE0034F755 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FE48902A8DD9DE0034F755 /* SceneDelegate.swift */; };
 		11FE48982A8DD9DF0034F755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FE48972A8DD9DF0034F755 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		117C6AB42A9077E2002DFE2B /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		11EEE1312A942FB8006CBDEB /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		11EEE1332A94532E006CBDEB /* SignInState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInState.swift; sourceTree = "<group>"; };
 		11FE488B2A8DD9DE0034F755 /* KingBurguer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingBurguer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FE488E2A8DD9DE0034F755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11FE48902A8DD9DE0034F755 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				11EEE1312A942FB8006CBDEB /* SignInViewModel.swift */,
+				11EEE1332A94532E006CBDEB /* SignInState.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				117C6AB52A9077E2002DFE2B /* SigninViewController.swift in Sources */,
 				11FE488F2A8DD9DE0034F755 /* AppDelegate.swift in Sources */,
 				11FE48912A8DD9DE0034F755 /* SceneDelegate.swift in Sources */,
+				11EEE1342A94532E006CBDEB /* SignInState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
