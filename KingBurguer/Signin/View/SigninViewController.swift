@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class SignInViewController: UIViewController, SignInViewModelDelegate {
+class SignInViewController: UIViewController {
     
     let email: UITextField = {
         let ed = UITextField()
@@ -87,8 +87,11 @@ class SignInViewController: UIViewController, SignInViewModelDelegate {
         viewModel?.send()
     }
     
+}
+
+extension SignInViewController: SignInViewModelDelegate{
+    //observador (O.O)
     func viewModelDidChanged(state: SignInState) {
         print("O viewModel notificou com o state: \(state)")
     }
-    
 }
