@@ -37,6 +37,17 @@ class SignInViewController: UIViewController {
         return btn
     }()
     
+    lazy var register: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("Criar conta", for: .normal)
+        btn.setTitleColor(.white, for: .normal)
+        btn.backgroundColor = .purple
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        //1-classe, 2-function, 3-evento
+        btn.addTarget(self, action: #selector(registerDidTap), for: .touchUpInside)
+        return btn
+    }()
+    
     var viewModel: SignInViewModel? {
         didSet {
             viewModel?.delegate = self
@@ -46,11 +57,14 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .green
+        view.backgroundColor = .systemBackground
+        
+        navigationItem.title = "Login"
         
         view.addSubview(email)
         view.addSubview(password)
         view.addSubview(send)
+        view.addSubview(register)
         
         let emailConstraints = [
             //1 - coordenadas a esquerda
@@ -77,14 +91,26 @@ class SignInViewController: UIViewController {
             send.heightAnchor.constraint(equalToConstant: 50.0)
         ]
         
+        let registerConstraints = [
+            register.leadingAnchor.constraint(equalTo: email.leadingAnchor),
+            register.trailingAnchor.constraint(equalTo: email.trailingAnchor),
+            register.topAnchor.constraint(equalTo: send.bottomAnchor, constant: 15.0),
+            register.heightAnchor.constraint(equalToConstant: 50.0)
+        ]
+        
         NSLayoutConstraint.activate(emailConstraints)
         NSLayoutConstraint.activate(passwordConstraints)
         NSLayoutConstraint.activate(sendConstraints)
-       
+        NSLayoutConstraint.activate(registerConstraints)
     }
     
     @objc func sendDidTap(_ sender: UIButton){
         viewModel?.send()
+    }
+    
+    @objc func registerDidTap(_ sender: UIButton){
+        let signUpVC = SignUpViewController()
+        navigationController?.pushViewController(signUpVC, animated: true)
     }
     
 }
