@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		115490482A956778008237C5 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115490472A956778008237C5 /* SignInCoordinator.swift */; };
+		1169D8262AA028CA00C874E6 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8252AA028CA00C874E6 /* SignUpCoordinator.swift */; };
 		117C6AB52A9077E2002DFE2B /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117C6AB42A9077E2002DFE2B /* SigninViewController.swift */; };
 		11EEE1322A942FB8006CBDEB /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEE1312A942FB8006CBDEB /* SignInViewModel.swift */; };
 		11EEE1342A94532E006CBDEB /* SignInState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EEE1332A94532E006CBDEB /* SignInState.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		115490472A956778008237C5 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
+		1169D8252AA028CA00C874E6 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
 		117C6AB42A9077E2002DFE2B /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		11EEE1312A942FB8006CBDEB /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		11EEE1332A94532E006CBDEB /* SignInState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInState.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				11EEE1362A9462B1006CBDEB /* View */,
+				1169D8252AA028CA00C874E6 /* SignUpCoordinator.swift */,
 			);
 			path = SignUp;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				11EEE1322A942FB8006CBDEB /* SignInViewModel.swift in Sources */,
 				117C6AB52A9077E2002DFE2B /* SigninViewController.swift in Sources */,
 				11FE488F2A8DD9DE0034F755 /* AppDelegate.swift in Sources */,
+				1169D8262AA028CA00C874E6 /* SignUpCoordinator.swift in Sources */,
 				115490482A956778008237C5 /* SignInCoordinator.swift in Sources */,
 				11FE48912A8DD9DE0034F755 /* SceneDelegate.swift in Sources */,
 				11EEE1342A94532E006CBDEB /* SignInState.swift in Sources */,
