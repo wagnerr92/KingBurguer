@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		115490482A956778008237C5 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115490472A956778008237C5 /* SignInCoordinator.swift */; };
+		1163F7092B09543D0017FB89 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163F7082B09543D0017FB89 /* HomeCoordinator.swift */; };
+		1163F70C2B0954570017FB89 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163F70B2B0954570017FB89 /* HomeViewController.swift */; };
+		1163F70F2B09547D0017FB89 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1163F70E2B09547D0017FB89 /* HomeViewModel.swift */; };
 		116598BB2B03BB2E006A7841 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116598BA2B03BB2E006A7841 /* SignUpViewModel.swift */; };
 		116598BD2B03BBB1006A7841 /* SignUpState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116598BC2B03BBB1006A7841 /* SignUpState.swift */; };
 		1169D8262AA028CA00C874E6 /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1169D8252AA028CA00C874E6 /* SignUpCoordinator.swift */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		115490472A956778008237C5 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
+		1163F7082B09543D0017FB89 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		1163F70B2B0954570017FB89 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1163F70E2B09547D0017FB89 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		116598BA2B03BB2E006A7841 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		116598BC2B03BBB1006A7841 /* SignUpState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpState.swift; sourceTree = "<group>"; };
 		1169D8252AA028CA00C874E6 /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
@@ -49,6 +55,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1163F7072B09541A0017FB89 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1163F70D2B0954670017FB89 /* ViewModel */,
+				1163F70A2B0954430017FB89 /* View */,
+				1163F7082B09543D0017FB89 /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1163F70A2B0954430017FB89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1163F70B2B0954570017FB89 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1163F70D2B0954670017FB89 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1163F70E2B09547D0017FB89 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		116598B92B03BB17006A7841 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +154,7 @@
 		11FE488D2A8DD9DE0034F755 /* KingBurguer */ = {
 			isa = PBXGroup;
 			children = (
+				1163F7072B09541A0017FB89 /* Home */,
 				11EEE1352A9462A8006CBDEB /* SignUp */,
 				117C6AB22A9077BF002DFE2B /* Signin */,
 				11FE488E2A8DD9DE0034F755 /* AppDelegate.swift */,
@@ -211,8 +244,11 @@
 				1169D8262AA028CA00C874E6 /* SignUpCoordinator.swift in Sources */,
 				115490482A956778008237C5 /* SignInCoordinator.swift in Sources */,
 				116598BD2B03BBB1006A7841 /* SignUpState.swift in Sources */,
+				1163F70F2B09547D0017FB89 /* HomeViewModel.swift in Sources */,
 				11FE48912A8DD9DE0034F755 /* SceneDelegate.swift in Sources */,
 				11EEE1342A94532E006CBDEB /* SignInState.swift in Sources */,
+				1163F7092B09543D0017FB89 /* HomeCoordinator.swift in Sources */,
+				1163F70C2B0954570017FB89 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
