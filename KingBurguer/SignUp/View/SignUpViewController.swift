@@ -135,6 +135,23 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController: SignUpViewModelDelegate{
     func viewModelDidChanged(state: SignUpState) {
-        print("O estado da view model SignUp é \(state)")
+        switch(state){
+        case .none:
+            break
+        case .loading:
+            //mostrar a barra progress
+            break
+        case .goToHome:
+            //navegar para a tela home
+            break
+        case .error(let msg):
+            let alert = UIAlertController(title: "Título", message: msg, preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            
+            self.present(alert, animated: true)
+            
+            break
+        }
     }
 }
