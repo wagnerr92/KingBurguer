@@ -30,6 +30,10 @@ class SignUpViewModel{
             self.state = .goToHome
         }
     }
+    
+    func goToHome(){
+        coordinator?.home()
+    }
 }
 
 
