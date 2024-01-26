@@ -143,6 +143,7 @@ extension SignUpViewController: SignUpViewModelDelegate{
             break
         case .goToHome:
             //navegar para a tela home
+            viewModel?.goToHome()
             break
         case .error(let msg):
             let alert = UIAlertController(title: "Título", message: msg, preferredStyle: .alert)
