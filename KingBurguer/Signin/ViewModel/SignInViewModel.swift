@@ -27,13 +27,16 @@ class SignInViewModel{
         
         //aqui esperamos 2 segundos(latencia de rede)
         DispatchQueue.main.asyncAfter(deadline: .now() + 2){
-            self.state = .error("Usuário não existe")
+            self.state = .goToHome
         }
     }
     
     func goToSignUp(){
         coordinator?.signUp()
-        
+    }
+    
+    func goToHome(){
+        coordinator?.home()
     }
 }
 
